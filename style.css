@@ -1,0 +1,638 @@
+/* Fuente a utilizar en la página */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#inicio {
+    background: linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.7)), url("img/fondo-inicio.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+#inicio .contenido header{
+    background-color: rgba(0, 0, 0, .8);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+
+#inicio .contenido header .contenido-header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#inicio .contenido header .contenido-header h1{
+    text-align: center;
+    color: white;
+}
+
+#inicio .contenido header .contenido-header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+#inicio .contenido header .contenido-header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 15px;
+    font-weight: 400;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header nav ul a:hover{
+    color: #50C5E7;
+}
+
+#inicio .contenido header .contenido-header .redes a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+
+#inicio .contenido header .contenido-header .redes a:hover{
+    color: #50C5E7;
+}
+
+#inicio .contenido header .contenido-header .seleccionado{
+    color: #50C5E7;
+}
+
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#inicio .contenido .presentacion .bienvenida{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+#inicio .contenido .presentacion h2{
+    font-size: 47px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion h2 span{
+    color: aqua;
+    font-size: 42px;
+}
+
+#inicio .contenido .presentacion .descripcion{
+    max-width: 700px;
+    margin: 25px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+#inicio .contenido .presentacion a{
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px;
+    padding: 20px 25px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+#inicio .contenido .presentacion a:hover{
+    background-color: #50C5E7;
+}
+
+#icono-nav{
+    color: #fff;
+    display: none;
+}
+
+
+/* SECCION SOBRE MI */
+#sobremi{
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+
+#sobremi .contenedor-foto{
+    max-width: 400px;
+    margin-right: 80px;
+}
+
+#sobremi .contenedor-foto img{
+    padding: 20px;
+    width: 100%;
+    border-radius: 60%;
+    background-color: #f3f3f3;
+}
+
+#sobremi .sobremi{
+    margin: 0 40px;
+}
+
+#sobremi .sobremi .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color:  #8b08c0;
+    text-decoration-thickness: 5px;
+    
+}
+
+#sobremi .sobremi h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 1px; 
+}
+
+#sobremi .sobremi h2 span{
+    color: #8b08c0;
+}
+
+#sobremi .sobremi h3{
+    font-size: 21px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+#sobremi .sobremi p{
+    font-size: 18px;
+    line-height: 25px;
+    color: #14141b;
+    margin-bottom: 12px;
+    font-weight: bold;
+
+}
+
+#sobremi .sobremi a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid #000;
+    margin-top: 30px;
+    transition: .5s;
+    font-weight: bold;
+}
+
+#sobremi .sobremi a:hover{
+    background-color: #8b08c0;
+    color: #fff;
+}
+
+
+/* SECCION HABILIDADES */
+
+.contenedor-skills{
+    background: linear-gradient(#e485ed, rgba(33,16,16,.8)), url(img/fondo-habilidades.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contenedor-skills h3{
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color:  white;
+    text-decoration-thickness: 3px;
+}
+
+.contenedor-skills .skills{
+    max-width: 600px;
+    margin: 30px auto;
+}
+
+.contenedor-skills .skills .info{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+}
+
+.contenedor-skills .skills .lista{
+    display: inline-block;
+    margin-right: 20px;
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+}
+
+.contenedor-skills .skills .barra{
+    background-color: #919191;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+
+.contenedor-skills .skills .barra .barra-progreso1{
+    background-color: #fff;
+    width: 70%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+
+.contenedor-skills .skills .barra .barra-progreso2{
+    background-color: #fff;
+    width: 80%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+
+.contenedor-skills .skills .barra .barra-progreso3{
+    background-color: #fff;
+    width: 40%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+
+/* Animaciones de las barras */
+
+@keyframes progreso1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes progreso2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+@keyframes progreso3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+/* SECCION HOBBIES */
+
+#hobbies{
+    background: linear-gradient(#e0379a, rgba(33,16,16,.8)), url(img/fondo-musica.webp);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 15px;
+    text-align: center;
+}
+
+#hobbies .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color:  white;
+    text-decoration-thickness: 3px;
+}
+
+#hobbies .fila{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 30px auto;
+}
+
+#hobbies .fila .hobbies{
+    max-width: 350px;
+    background-color: #fff;
+    padding: 30px;
+    margin: 0px 5px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#hobbies .fila .hobbies:hover{
+    box-shadow: 5px 5px 10px #000000, -5px -5px 10px #8a8a8a;
+}
+
+#hobbies .fila .hobbies h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+#hobbies .fila .hobbies .icono{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e0379a;
+    padding: 20px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+#hobbies .fila .hobbies hr{
+    width: 30%;
+    margin: auto;
+    color: #000;
+    margin-bottom: 25px;
+}
+
+#hobbies .fila .hobbies ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+/* SECCION PORTAFOLIO */
+
+#portafolio{
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+}
+
+#portafolio .titulo-seccion{
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color:  #ec5237;
+    text-decoration-thickness: 5px;
+}
+
+#portafolio .fila{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+#portafolio .fila .proyecto{
+    max-width: 450px;
+    border: 1px solid #000;
+    margin: 0 10px;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+}
+
+#portafolio .fila .proyecto img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(1);
+    object-fit: cover;
+    transition: .5s;
+}
+
+#portafolio .fila .proyecto:hover img{
+    filter: grayscale(0);
+}
+
+#portafolio .fila .proyecto .info{
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    color: #ec5237;
+    width: 100%;
+    padding: 10px;
+    opacity: 0;
+    bottom: -40px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#portafolio .fila .proyecto:hover .info{
+    opacity: 1;
+    bottom: 0;
+}
+
+#portafolio .fila .proyecto .info a{
+    text-decoration: none;
+    color: #ec5237;
+}
+
+/* SECCCION CONTACTO */
+
+#contacto{
+    padding: 100px 15px;
+    background-color: #e2dfdf;
+}
+
+#contacto .titulo-seccion{
+    margin-bottom: 22px;
+    text-align: center;
+    font-size: uppercase;
+    color: #111135;
+}
+
+#contacto .contenedor-form{
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contacto .contenedor-form .fila{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+#contacto .contenedor-form .fila-mitad{
+    display: flex;
+    justify-content: space-between;
+}
+
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+
+#contacto .contenedor-form .fila-mitad input{
+    width: 48%;
+}
+
+#contacto .contenedor-form .input-full{
+    width: 100%;
+}
+
+#contacto .contenedor-form .input-full{
+    width: 100%;
+}
+
+#contacto .btn-enviar{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#contacto .btn-enviar:hover{
+    background-color: #d4395b;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* SECCION DEL FOOTER */
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+/* SECCION RESPONSIVE */
+
+@media screen and (max-width:800px) {
+    .redes{
+        display:none;
+    }
+
+    nav{
+        display: none;
+    }
+    nav.reponsive{
+        display: block;
+        background-color: rgba(0, 0, 0, .8);
+        width: 100%;
+        position: absolute;
+        top: 48px;
+        left: 0;
+        padding: 10px 0;
+    }
+
+    nav.responsive ul{
+        display: block !important;
+        text-align: center;
+    }
+
+    nav.responsive ul li{
+        margin: 5px 0;
+    }
+
+    #icono-nav{
+        display: block;
+    }
+
+    #inicio .contenido .presentacion h2{
+        font-size: 40px;
+    }
+
+    #sobremi{
+        padding: 50px 0;
+        display: block;
+    }
+
+    #sobremi .contenedor-foto{
+        max-width: 200px;
+        margin: auto;
+    }
+
+    #sobremi .contenedor-foto img{
+        padding: 8px;
+    }
+
+    #sobremi .sobremi .titulo-seccion{
+        text-align: center;
+    }
+
+    #sobremi .sobremi h2{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .contenedor-skills{
+        padding: 50px 20px;
+    }
+
+    #hobbies{
+        padding: 50px 15px;
+        display: 100%;
+    }
+
+    #hobbies .fila{
+        display: block;
+    }
+
+    #hobbies .fila .hobbies{
+        margin: 10px auto;
+    }
+
+    #portafolio{
+        padding: 50px 0;
+    }
+
+    #portafolio .fila{
+        display: block;
+    }
+
+    #portafolio .fila .proyecto{
+        margin:  10px auto;
+    }
+
+    #contacto{
+        padding: 50px 15px;
+    }
+
+    #contacto .contenedor-form .fila-mitad{
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #contacto .contenedor-form .fila-mitad input{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}

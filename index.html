@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <link rel="stylesheet" href="style.css">
+    <title>Portafolio</title>
+</head>
+<body>
+    <!-- SECCION INICIO-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Alura</h1>
+                    <nav id="nav">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#skills" onclick="seleccionar(this)">HABILIDADES/HOBBIES</a></li>
+                            <li><a href="#portafolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+                    
+                    <!-- Iconos del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <!-- Iconos de las redes sociales -->
+                    <div class="redes">
+                        <a href="https://www.linkedin.com/in/iv%C3%A1n-rodrigo-madrigal-m%C3%A9ndez-238757157/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/ivanrodrigo.madrigalmendez"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://github.com/FreakinBoss"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Iván Madrigal</span>, Estudiante de Desarrollo Web</h2>
+                <p class="descripcion">Tengo un amplio sentido de la responsabilidad y el compromiso los cuales los dedico a mi trabajo y estudios a fin de ejercer con total profesionalidad mi labor.</p>
+                <a href="#portafolio">Ir al Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.png" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, soy <span>Iván Madrigal</span></h2>
+            <h3>Estudiante de Desarrollo Web</h3>
+            <p>Soy un apasionado de la tecnología, siempre dispuesto a recurrir a la investigación en cuanto al tema sea de mi interés y siempre lo doy todo para mis estudios pues son lo más importante para mi, ya que me permiten desarrollarme como persona.</p>
+            <a href="file:///C:/Users/Usuario/Documents/Documentos%20importantes/CV.pdf" download="CV.pdf">Descarga mi CV</a>
+        </div>
+
+    </section>
+
+    <!-- SECCION HABILIDADES -->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>HTML</p>
+                <span class="porcentaje">70%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>CSS</p>
+                <span class="porcentaje">80%</span>
+            </div>
+            <div class="barra">
+                <div id="css" class="barra-progreso2"></div>
+            </div>
+        </div>
+
+        <div class="skills">
+            <div class="info">
+                <p><span class="lista"></span>JAVASCRIPT</p>
+                <span class="porcentaje">40%</span>
+            </div>
+            <div class="barra">
+                <div id="js" class="barra-progreso3"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION HOBBIES -->
+    <section id="hobbies">
+        <h3 class="titulo-seccion">MIS HOBBIES</h3>
+        <div class="fila">
+            <div class="hobbies">
+                <span class="icono"><i class="fa-solid fa-gamepad"></i></span>
+                <h4>JUGAR A VIDEOJUEGOS</h4>
+                <hr>
+            </div>
+            <div class="hobbies">
+                <span class="icono"><i class="fa-solid fa-music"></i></span>
+                <h4>ESCUCHAR MÚSICA</h4>
+                <hr>
+            </div>
+            <div class="hobbies">
+                <span class="icono"><i class="fa-solid fa-utensils"></i></span>
+                <h4>COCINAR NUEVAS RECETAS</h4>
+                <hr>
+            </div>
+            <div class="hobbies">
+                <span class="icono"><i class="fa-brands fa-readme"></i></span>
+                <h4>LEER LIBROS</h4>
+                <hr>
+            </div>
+            <div class="hobbies">
+                <span class="icono"><i class="fa-solid fa-dumbbell"></i></span>
+                <h4>HACER EJERCICIO</h4>
+                <hr>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay">
+                    <img src="img/encriptador.png" alt="">
+                    <div class="info">
+                        <h4><a href="https://freakinboss.github.io/Encriptador-de-texto/">Encriptador de Datos</a></h4>
+                        <p>Challenge #1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contáctame</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila-mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" required>
+                    <input type="email" placeholder="Direccción de Email" class="input-mitad" required>
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Asunto" class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Comentarios" class="input-full"></textarea>
+                </div>
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Iván Rodrigo Madrigal Méndez - Cancún, Quintana Roo <br>2023</p>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
